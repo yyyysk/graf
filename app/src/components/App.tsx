@@ -12,7 +12,7 @@ const App = () => {
         <Route exact path='/' component={Entry} />
         <Route path='/room/create/' component={CreateRoom} />
         <Route path='/room/join/' component={JoinRoom} />
-        <Route path='/room/:roomId/' component={Graff} />
+        <Route path='/graf/:roomId/' component={Graff} />
       </BrowserRouter>
     </>
   );

@@ -118,7 +118,7 @@ const Graff = () => {
 
   return(
     <div className="Entry">
-		  <CssBaseline />
+      <CssBaseline />
       <Container fixed>
         <Typography component="div" style={{ height: '100vh', backgroundColor: '#fff' }}>
           <Typography component="h2" align="left">Graffiti</Typography>
@@ -134,18 +134,18 @@ const Graff = () => {
             </Button>
           </Typography>
         </Typography>
-      </Container>
-      <Typography component="div" align="center" style={{position: "fixed", bottom: 0, width: "100%", background: "#eee"}}>
-        <Typography component="div" align="center" style={{display: "flex", justifyContent: "center", margin: "12px", alignItems: "center"}}>
-          <div>
-            <img alt="pen" width="16" height="16" src="/images/pen.png" />
-            <input type="color" id="head" name="head" value={color} onChange={(e) => setColor(e.target.value)} />
-          </div>
-          <div>
-            <Button color="secondary" size="small" variant="contained" style={{margin: "0 16px"}} onClick={() => clear()}>クリア</Button>
-          </div>
+        <Typography component="div" align="center" style={{position: "fixed", bottom: 0, width: "100%", background: "#eee"}}>
+          <Typography component="div" align="center" style={{display: "flex", justifyContent: "center", margin: "12px", alignItems: "center"}}>
+            <div>
+              <img alt="pen" width="16" height="16" src="/images/pen.png" />
+              <input type="color" id="head" name="head" value={color} onChange={(e) => setColor(e.target.value)} />
+            </div>
+            <div>
+              <Button color="secondary" size="small" variant="contained" style={{margin: "0 16px"}} onClick={() => clear()}>クリア</Button>
+            </div>
+          </Typography>
         </Typography>
-      </Typography>
+      </Container>
     </div>
   );
 };
